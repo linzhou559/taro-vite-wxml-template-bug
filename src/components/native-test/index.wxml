@@ -1,0 +1,12 @@
+<view class="native-wrapper">
+  <image
+    src="{{src}}"
+    mode="{{mode}}"
+    bindload="onLoad"
+    binderror="onError"
+    class="native-image"
+  />
+  <view class="error-tip" wx:if="{{loadError}}">
+    图片加载失败
+  </view>
+</view>
